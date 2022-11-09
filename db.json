@@ -1,0 +1,26 @@
+{
+  "horariosIniciais": [
+    {
+      "id": 1,
+      "horarioMa": "19:26",
+      "horarioTa": "19:27",
+      "horarioNo": "19:27"
+    }
+  ],
+  "horariosFinais": [
+    {
+      "id": 2,
+      "horarioMa2": "17:27",
+      "horarioTa2": "20:27",
+      "horarioNo2": "20:27"
+    }
+  ],
+  "programacao": [
+    {
+      "id": 3,
+      "manha": "Café da manhã",
+      "tarde": "Piscina",
+      "noite": "Janta"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edição da Programação do Dia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./img/icone.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12">
+                <h1 class="mb-5 mt-5">Coloque a programação do dia!</h1>
+                <form id="my-form" method="post">
+                    <h5 class="mb-5 mt-2" for="manha">Programação da manhã:</h5>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                            <select name="manha" id="manha" class="form-select form-select-md mb-5" aria-label=".form-select-lg">
+                                <option selected value="Café da manhã">Café da manhã</option>
+                                <option value="Almoço">Almoço</option>
+                                <option value="Piscina">Piscina</option>
+                                <option value="Caminhada">Caminhada</option>
+                                <option value="Janta">Janta</option>
+                                <option value="Tempo Livre">Tempo Livre</option>
+                                <option value="Gincana">Gincana</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <input class="form-control" type="time" name="horarioManha" id="horarioManha">
+                        </div>
+                        <div class="mt-2 mb-2 col-md-1 col-sm-1 col-lg-1">
+                            <spam>Até</spam>
+                        </div>
+                        <div  class="col-md-2 col-sm-2 col-lg-2">
+                            <input name="horarioManha2" id="horarioManha2" class="form-control" type="time">
+                        </div>
+                    </div>
+
+                    <h5 class="mb-5" for="tarde">Programação da tarde:</h5>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                            <select name="tarde" id="tarde" class="form-select form-select-md mb-5" aria-label=".form-select-lg">
+                                <option value="Café da Manhã">Café da manhã</option>
+                                <option value="Almoço">Almoço</option>
+                                <option selected value="Piscina">Piscina</option>
+                                <option value="Caminhada">Caminhada</option>
+                                <option value="Janta">Janta</option>
+                                <option value="Tempo Livre">Tempo Livre</option>
+                                <option value="Gincana">Gincana</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <input class="form-control" type="time" name="horarioTarde" id="horarioTarde">
+                        </div>
+                        <div class="mt-2 mb-2 col-md-1 col-sm-1 col-lg-1">
+                            <spam>Até</spam>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <input type="time" class="form-control" name="horarioTarde2" id="horarioTarde2">
+                        </div>
+                    </div>
+
+                    <h5 class="mb-5" for="noite">Programação da noite:</h5>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                            <select name="noite" id="noite" class="form-select form-select-md mb-5" aria-label=".form-select-lg">
+                                <option value="Café da Manhã">Café da manhã</option>
+                                <option value="Almoço">Almoço</option>
+                                <option value="Piscina">Piscina</option>
+                                <option value="Caminhada">Caminhada</option>
+                                <option selected value="Janta">Janta</option>
+                                <option value="Tempo Livre">Tempo Livre</option>
+                                <option value="Gincana">Gincana</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <input class="form-control" type="time" name="horarioNoite" id="horarioNoite">
+                        </div>
+                        <div class="mt-2 mb-2 col-md-1 col-sm-1 col-lg-1">
+                            <spam>Até</spam>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-lg-2">
+                            <input type="time" class="form-control" name="horarioNoite2" id="horarioNoite2">
+                        </div>
+                    </div>
+
+                    <div class="mb-5 mt-5 mensagem" id="msg">
+
+                    </div>
+
+                    <input  id="submit-button" class="btn btn-outline-success mb-5 mt-5" type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Components/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
